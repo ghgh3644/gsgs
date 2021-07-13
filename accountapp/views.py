@@ -13,7 +13,10 @@ def hello_world(request):
         model_instance.text = temp
         model_instance.save()
 
+        data_list = NewModel.objects.all()
 
-        return render(request, 'accountsapp/hello_world.html', context={'model_instance': model_instance})
+        return render(request, 'accountsapp/hello_world.html', context={'data_list': data_list})
     else :
-        return render(request, 'accountsapp/hello_world.html', context={'text': 'GET METHOD!'})
+        data_list = NewModel.objects.all()
+
+        return render(request, 'accountsapp/hello_world.html', context={'data_list': data_list})
