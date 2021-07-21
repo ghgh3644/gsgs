@@ -1,5 +1,5 @@
 
-def decorator(func):
+def decorator(func): #decorator, decorated 이름은 자신맘대로 지정가능
     def decotated(input_text):
         print('함수 시작!')
         func(input_text)
