@@ -57,7 +57,7 @@ class AccountUpdateView(UpdateView):
         else :
             return HttpResponseForbidden()
 
-class AccountDeleteView(DeleteView) :
+class AccountDeleteView(DeleteView):
     model = User
     context_object_name = 'target_user'
     success_url = reverse_lazy('accountapp:hello_world')
@@ -66,11 +66,11 @@ class AccountDeleteView(DeleteView) :
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated and self.get_object() == request.user:
             return super().get(request, *args, **kwargs)
-        else :
+        else:
             return HttpResponseForbidden()
 
     def post(self, request, *args, **kwargs):
         if request.user.is_authenticated and self.get_object() == request.user:
             return super().post(request, *args, **kwargs)
-        else :
+        else:
             return HttpResponseForbidden()
