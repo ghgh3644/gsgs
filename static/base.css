@@ -61,3 +61,10 @@
     padding: 1rem;
     margin: 1rem;
 }
+
+@media screen and (max-width: 500px) {
+    html {
+        /* 기본 폰트사이즈가 16px*/
+        font-size: 13px;
+    }
+}
