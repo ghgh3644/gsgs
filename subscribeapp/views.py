@@ -26,4 +26,4 @@ class SubscriptionView(RedirectView):
         return super().get(request, *args, **kwargs)
 
     def get_redirect_url(self, *args, **kwargs):
-        return reverse('projectapp:detail', kwargs={'pk' : kwargs['project_pk']})
+        return reverse('projectapp:detail', kwargs={'pk': kwargs['project_pk']})
