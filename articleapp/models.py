@@ -16,3 +16,5 @@ class Article(models.Model):
     content = models.TextField(null=True)
 
     created_at = models.DateField(auto_now_add=True, null=True) #언제 이 글을 작성했는지
+
+    like = models.IntegerField(default=0)
