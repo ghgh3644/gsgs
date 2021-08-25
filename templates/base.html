@@ -10,8 +10,16 @@
 
 <hr>
 
+{% for message in messages %}
+    <div class="text-center">
+        <div class="btn btn-success round_button">
+            {{ message }}
+        </div>
+
+    </div>
+{% endfor %}
+
 {% block content %}
-    {% include 'hello_world.html' %}
 {% endblock %}
 
 <hr>
