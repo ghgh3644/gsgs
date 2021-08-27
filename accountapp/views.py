@@ -41,7 +41,6 @@ class AccountUpdateView(UpdateView):
     model = User
     form_class = AccountCreationForm
     context_object_name = 'target_user'
-    success_url = reverse_lazy('articleapp:list')
     template_name = 'accountapp/update.html'
 
     def get_success_url(self):
