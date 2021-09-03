@@ -86,3 +86,6 @@ media/
 staticfiles/
 
 pargmatic.pem
+
+gis_3ban_gcp
+gis_3ban_gcp.pub
