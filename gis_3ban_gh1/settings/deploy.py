@@ -30,7 +30,6 @@ ALLOWED_HOSTS = ["*"]
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# 뭔가 데이터베이스 이름이 이상하네요
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
