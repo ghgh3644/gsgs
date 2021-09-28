@@ -2,13 +2,11 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo 'ahwehasd'
+RUN echo 'asdgasdvsd'
 
 RUN git clone https://github.com/ghgh3644/gsgs.git
 
 WORKDIR /home/gsgs/
-
-RUN echo "SECRET_KEY = django-insecure-+96pvi5+q58yq-to)q9e(^iati4!fsij-2a@h$h1w8taq)+s6%" > .env
 
 RUN pip install -r requirements.txt
 
